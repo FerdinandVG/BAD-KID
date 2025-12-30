@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    height: 100vh;        /* ← OBLIGATORIO */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+
+  .Inside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .Inside img {
+    width: 500px;                 
+    max-width: 80vw;              
+    height: auto;
+    }

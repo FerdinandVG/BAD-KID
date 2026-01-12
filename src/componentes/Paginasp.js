@@ -1,18 +1,38 @@
 import { Link } from 'react-router-dom'
 import './Paginasp.css'
-import fondosp from './fondosp.png'
-import badkidsp from './badkidsp.png'
+import fondosp from './backsplashv.webm'
+import badkidsp from './logosplash.webm'
+
 
 function Paginasp(){
 
     return(
 
-        <div className = "container" style={{ backgroundImage: `url(${fondosp})` }}>
-            <div className= "Inside">
-            <Link to="/home">
-          <img src={badkidsp} alt="Bad Kid Splash" />
+      <div className="container">
+
+      {/* VIDEO DE FONDO */}
+      <video
+        className="video-bg"
+        src={fondosp}
+        autoPlay
+        muted
+        playsInline
+        onEnded={(e) => e.target.pause()}
+      />
+
+      <div className="Inside">
+        <Link to="/home">
+          <video
+            src={badkidsp}
+            autoPlay
+            muted
+            playsInline
+            onEnded={(e) => e.target.pause()}
+            className="logo-video"
+          />
         </Link>
       </div>
+
     </div>
   )
 }

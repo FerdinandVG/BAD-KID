@@ -5,6 +5,9 @@ import Paginasp from './componentes/Paginasp'
 import Paginahm from './componentes/Paginahme'
 import Paginaqs from './componentes/Paginaqs'
 import Payuda from './componentes/Payuda'
+import Proyectos from './componentes/Proyectos'
+
+
 
 function App() {
   return (
@@ -13,8 +16,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Paginasp />} />
         <Route path="/home" element={<Paginahm />} />
+        <Route path="/home/proyectos" element={<Proyectos />} />
         <Route path="/home/historia" element={<Paginaqs />} />
         <Route path="/home/directorio" element={<Payuda />} />
+        
       </Routes>
     </BrowserRouter>
     </div>

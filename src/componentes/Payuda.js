@@ -18,7 +18,7 @@ function Payuda() {
 
       <ul className="uppermenu">
         <li>
-          <Link to="/home">PROYECTOS</Link>
+          <Link to="/home/proyectos">PROYECTOS</Link>
         </li>
 
         <li>
@@ -225,17 +225,11 @@ function Payuda() {
               </a>
               </li>
 
-
          </ul>
-
-   
-     
-  
 
 
 
 </div>
-
 
 
     )
